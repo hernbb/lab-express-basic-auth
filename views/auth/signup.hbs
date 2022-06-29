@@ -1,0 +1,17 @@
+{{!-- views/auth/signup.hbs --}}
+
+<form action="/signup" method="post">
+  <div class="mb-3">
+    <label class="form-label">Username</label>
+    <input type="text" name="username" class="form-control" placeholder="ironhacker">
+  <div id="emailHelp" class="form-text">We'll never share your user with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" name="password" class="form-control" placeholder="Your password">
+  </div>
+  <button type="submit" class="btn btn-primary">Signup</button>
+</form>
+</div>
+
+{{errorMessage}}
